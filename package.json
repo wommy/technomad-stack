@@ -6,7 +6,6 @@
   "repository": "git@github.com:wommy/technomad_11ty.git",
   "author": "wommy <tom@technomad.media>",
   "license": "MIT",
-  "devDependencies": {},
   "dependencies": {
     "@11ty/eleventy": "^0.8.2"
   }
