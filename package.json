@@ -1,6 +1,6 @@
 {
   "name": "technomad_11ty",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "technomad built with 11ty",
   "main": "index.js",
   "repository": "git@github.com:wommy/technomad_11ty.git",
