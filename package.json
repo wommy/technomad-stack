@@ -6,8 +6,8 @@
   "repository": "git@github.com:wommy/technomad_11ty.git",
   "author": "wommy <tom@technomad.media>",
   "license": "MIT",
-  "dependencies": {
-    "@11ty/eleventy": "^0.8.2"
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0"
   },
   "scripts": {
     "start": "eleventy --serve",
