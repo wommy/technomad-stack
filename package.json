@@ -1,13 +1,13 @@
 {
   "name": "technomad_11ty",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "technomad built with 11ty",
   "main": "index.js",
   "repository": "git@github.com:wommy/technomad_11ty.git",
   "author": "wommy <tom@technomad.media>",
   "license": "MIT",
-  "dependencies": {
-    "@11ty/eleventy": "^0.8.2"
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0"
   },
   "scripts": {
     "start": "eleventy --serve",
