@@ -1,16 +1,8 @@
-// add syntaxHighlight
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-module.exports = function(eleventyConfig) {
-	// Copy the `static/` directory 
-	eleventyConfig.addPassthroughCopy("_static");
-
-	//add syntaxHighlight
-  eleventyConfig.addPlugin(syntaxHighlight);
-	
+module.exports = (config) => {
+	config.setTemplateFormats("njk,css")
 	return {
-		passthroughFileCopy: true,
 		dir: {
-			input: "views"
+			input: "src/11ty"
 		}
 	};
 };

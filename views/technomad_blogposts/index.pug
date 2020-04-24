@@ -1,9 +1,0 @@
----
-eleventyExcludeFromCollections: true
----
-extends /_template.pug
-
-block content
-	ol
-		for each in collections.all
-			li: a(href=each.url)= each.data.title
