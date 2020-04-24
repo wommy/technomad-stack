@@ -4,15 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>{{ pkg.title }}</title>
-<style>
-{% include __critical.css %}
-</style>
+<title>{{ pkg.name }}</title>
+<link rel="stylesheet" href="css/tailwind.css">
 </head>
 <body>
-{%- include _header -%}
+{%- include "header.njk" %}
 <main>
-	{{ content | rstrip }}
+{{ content | safe }}
 </main>
 <script></script>
 </body>
