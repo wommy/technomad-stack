@@ -1,17 +1,19 @@
 {
-  "name": "technomad-11ty-template",
-  "version": "0.3.0",
-  "description": "technomad 11ty template",
-  "repository": "git@github.com:wommy/technomad_11ty.git",
+  "name": "technomad-stack",
+  "version": "1.0.0",
+  "description": "wommys web stack",
+  "repository": "git@github.com:wommy/technomad_stack.git",
   "author": "wommy <tom@technomad.media>",
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "autoprefixer": "^9.8.5",
-    "postcss-cli": "^7.1.1",
-    "tailwindcss": "^1.5.1"
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.2",
+    "postcss-import": "^12.0.1",
+    "sanitize.css": "^12.0.1",
+    "tailwindcss": "^1.7.6"
   },
   "scripts": {
-    "tailwind": "postcss src/tailwind.css -o src/11ty/css/tailwind.css"
+    "css": "postcss src/style.css -o src/11ty/css/style.css"
   }
 }
