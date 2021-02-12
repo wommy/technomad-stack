@@ -1,8 +1,9 @@
 module.exports = (config) => {
-	config.setTemplateFormats("njk,css,md")
 	return {
 		dir: {
 			input: "11ty"
-		}
+		},
+		templateFormats: [ "html","njk","css","md" ],
+		htmlTemplateEngine: "njk",
 	};
 };
