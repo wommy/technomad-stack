@@ -14,7 +14,7 @@
     "tailwindcss": "^2.0.3"
   },
   "scripts": {
-    "css": "postcss post.css -o 11ty/css/style.css",
+    "css": "postcss post.css -o 11ty/static/css/style.css",
     "dev": "yarn eleventy --serve & yarn run css -w",
     "build": "yarn run css && yarn eleventy"
   }
