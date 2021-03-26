@@ -3,7 +3,7 @@ module.exports = (config) => {
 		dir: {
 			input: "11ty"
 		},
-		templateFormats: [ "html","njk","css","md" ],
+		templateFormats: [ "html","css","md" ],
 		htmlTemplateEngine: "njk",
 	};
 };
