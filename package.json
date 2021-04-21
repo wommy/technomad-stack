@@ -6,14 +6,19 @@
   "author": "wommy <tom@technomad.media>",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
-    "autoprefixer": "^9.8.6",
-    "postcss-cli": "^7.1.2",
-    "postcss-import": "^12.0.1",
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.1",
     "sanitize.css": "^12.0.1",
-    "tailwindcss": "^1.7.6"
+    "tailwindcss": "^2.1.1"
   },
   "scripts": {
-    "css": "postcss post.css -o static/style.css"
+    "css": "postcss post.css -o static/style.css",
+    "css:prod": "NODE_ENV=production postcss post.css -o static/style.css",
+    "clean": "rm -rf _site",
+    "dev": "yarn run clean; yarn run css -w & yarn eleventy --serve",
+    "build": "yarn run clean; yarn run css:prod; yarn eleventy"
   }
 }
