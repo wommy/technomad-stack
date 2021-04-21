@@ -18,7 +18,7 @@
     "css": "postcss post.css -o static/style.css",
     "css:prod": "NODE_ENV=production postcss post.css -o static/style.css",
     "clean": "rm -rf _site",
-    "dev": "yarn run clean; yarn run css -w & yarn eleventy --serve",
+    "dev": "yarn run clean; yarn run css & yarn eleventy --serve",
     "build": "yarn run clean; yarn run css:prod; yarn eleventy"
   }
 }
