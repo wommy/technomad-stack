@@ -5,4 +5,7 @@ module.exports = {
     "./11ty/**/*.js",
   ],
   darkMode: false,
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
