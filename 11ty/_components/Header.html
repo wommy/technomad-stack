@@ -1,15 +1,21 @@
-<header>
-	<nav>
-	{%- for key, url in { "home": "/" } %}
+<header class="flex justify-between">
+	<h1>
+		<a href="/">{{meta.title}}</a>
+	</h1>
+	<!--
 		<a 
-			{% if url == page.url %}
+			{% if url==page.url or url==page.fileSlug %}
 				class="active"
 			{% else %}
 				href="{{ url }}"
 			{% endif %}
 		>
 			{{ key }}
-		</a>
-	{%- endfor %}
+		</a> 
+	-->
+	<nav>
+		{{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+		listClass: "gap-4 flex"
+		}) | safe }}
 	</nav>
 </header>
