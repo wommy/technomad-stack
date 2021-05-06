@@ -23,10 +23,10 @@
   },
   "scripts": {
     "css": "postcss post.css -o static/style.css",
+    "css:dev": "NODE_ENV=development yarn run css -w",
     "css:prod": "NODE_ENV=production yarn run css",
-    "css:dev": "NODE_ENV=development yarn run css",
     "clean": "rm -rf _site",
-    "dev": "yarn run clean; yarn run css:dev -w & yarn eleventy --serve",
+    "dev": "yarn run clean; yarn eleventy --serve --incremental & yarn run css:dev",
     "build": "yarn run clean; yarn run css:prod; yarn eleventy"
   }
 }

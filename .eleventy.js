@@ -1,5 +1,6 @@
 module.exports = config => {
-	config.addPassthroughCopy({ "static" : "/" })
+	config.addPassthroughCopy({ "static": "/" })
+	config.setDataDeepMerge(true)
 	return {
 		dir: {
 			input: "11ty",
