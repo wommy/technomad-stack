@@ -14,6 +14,13 @@
     "sanitize.css": "^12.0.1",
     "tailwindcss": "^2.1.1"
   },
+  "postcss": {
+    "plugins": {
+      "postcss-import": {},
+      "autoprefixer": {},
+      "tailwindcss": {}
+    }
+  },
   "scripts": {
     "css": "postcss post.css -o static/style.css",
     "css:prod": "NODE_ENV=production yarn run css",
