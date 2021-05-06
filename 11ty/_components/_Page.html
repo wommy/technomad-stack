@@ -1,7 +1,11 @@
 ---
 layout: _Html5
+headerPath: "Header.html"
 ---
-{#- include "Header.html" #}
-<main class="container">
-{{ content | safe }}
-</main>
+<div class="container mx-auto">
+	{%- include headerPath %}
+	<main>
+		<h2 class="text-center">{{ title }}</h2>
+		{{ content | safe }}
+	</main>
+</div>
