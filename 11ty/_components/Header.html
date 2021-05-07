@@ -1,6 +1,6 @@
 <header class="flex justify-between">
-	<h1>
-		<a href="/">{{ meta.title | upper }}</a>
+	<h1 class="text-3xl font-semibold">
+		<a class="no-underline uppercase" href="/">{{ meta.title }}</a>
 	</h1>
 	<!--
 		<a 
@@ -15,7 +15,9 @@
 	-->
 	<nav>
 		{{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
-		listClass: "gap-4 flex"
+		listClass: "space-x-4 flex",
+		listItemClass: "text-2xl font-medium capitalize",
+		anchorClass: "no-underline"
 		}) | safe }}
 	</nav>
 </header>
