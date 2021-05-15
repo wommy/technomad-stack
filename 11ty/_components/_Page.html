@@ -5,7 +5,9 @@ headerPath: "Header.html"
 <div class="container mx-auto">
 	{%- include headerPath %}
 	<main>
+		{%- if title %}
 		<h2 class="text-center">{{ title }}</h2>
+		{%- endif %}
 		{{ content | safe }}
 	</main>
 </div>
