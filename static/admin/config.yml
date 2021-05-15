@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+media_folder: 'static/'
+local_backend: true
+# media_library:
+#   name: cloudinary
+#   config:
+#     cloud_name: 
+#     api_key: 
+collections:
+- label: 'Files'
+  name: 'files'
+  files:
+  - label: 'Meta'
+    name: 'meta'
+    file: '11ty/_data/meta.yml'
+    fields:
+    - label: 'Title'
+      name: 'title'
+      widget: 'string'
