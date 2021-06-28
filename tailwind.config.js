@@ -1,5 +1,5 @@
 module.exports = {
-  mode: "jit",
+  // mode: "jit",
   purge: [
     "./11ty/**/*.html",
     "./11ty/**/*.js",

@@ -30,7 +30,8 @@
     "css:dev": "NODE_ENV=development yarn run css -w",
     "css:prod": "NODE_ENV=production yarn run css",
     "clean": "rm -rf _site",
-    "dev": "yarn run clean; yarn eleventy --serve --incremental & yarn run css:dev",
+    "dev": "yarn run clean; yarn run css; yarn eleventy --serve --incremental",
+    "dev:dev": "yarn run clean; yarn run css:dev; yarn eleventy --serve --incremental",
     "cms": "npx netlify-cms-proxy-server",
     "build": "yarn run clean; yarn run css:prod; yarn eleventy"
   }
