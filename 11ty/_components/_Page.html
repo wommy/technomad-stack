@@ -3,7 +3,9 @@ layout: _Html5
 headerPath: "Header.html"
 ---
 <div class="container mx-auto">
-	{%- include headerPath %}
+
+{% include headerPath %}
+
 	<main>
 		{%- if title %}
 		<h2 class="text-center">{{ title }}</h2>
