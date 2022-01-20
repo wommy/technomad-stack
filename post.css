@@ -2,5 +2,9 @@
 @import "sanitize.css/forms.css";
 @import "sanitize.css/typography.css";
 @import "sanitize.css/assets.css";
-@import "tailwindcss/components";
+@import "tailwindcss/base";
 @import "tailwindcss/utilities";
+@import "tailwindcss/components";
+@layer components {
+	
+}

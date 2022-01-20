@@ -1,10 +1,8 @@
 module.exports = {
-  // mode: "jit",
-  purge: [
-    "./11ty/**/*.html",
-    "./11ty/**/*.js",
-  ],
-  darkMode: false,
+  content: [ "./11ty/**/*.{html,js}", ],
+  corePlugins: {
+    preflight: false,
+  },
   plugins: [
     require('@tailwindcss/typography'),
   ],
