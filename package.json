@@ -29,7 +29,7 @@
   "scripts": {
     "clean": "rm -rf _site",
     "cms": "pnpm dlx netlify-cms-proxy-server",
-    "css": "postcss post.css -o static/style.css --verbose",
+    "css": "postcss post.css -o _static/style.css --verbose",
     "start": "pnpm css -- -w & eleventy -- --serve --incremental",
     "build": "pnpm css; eleventy"
   }

@@ -1,6 +1,6 @@
 const yaml = require("js-yaml")
 module.exports = config => {
-	config.addPassthroughCopy({ "static/*": "/" })
+	config.addPassthroughCopy({ "_static/*": "/" })
 	config.addPlugin(require("@11ty/eleventy-navigation"))
 	config.addDataExtension("yml", contents => yaml.load(contents))
 	return {

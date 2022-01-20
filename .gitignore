@@ -1,4 +1,4 @@
 node_modules
 _site
-static/style.css
+_static/style.css
 .env
